@@ -97,12 +97,20 @@ namespace MauiLocalizationTest.Resources.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Welcome to 
-        ///.NET Multi-platform App UI.
+        ///   Looks up a localized string similar to Welcome to .NET Multi-platform App UI.
         /// </summary>
         internal static string LBL_WELCOME {
             get {
                 return ResourceManager.GetString("LBL_WELCOME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        internal static string MAIN_PAGE_TITLE {
+            get {
+                return ResourceManager.GetString("MAIN_PAGE_TITLE", resourceCulture);
             }
         }
     }

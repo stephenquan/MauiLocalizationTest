@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiLocalizationTest"
     x:Name="this"
+    Title="{Binding MAIN_PAGE_TITLE}"
     x:DataType="local:MainPage"
     BindingContext="{Reference this}">
 
@@ -15,24 +16,25 @@
                 HeightRequest="185"
                 SemanticProperties.Description="dot net bot in a race car number eight"
                 Source="dotnet_bot.png" />
-
             <Label
                 SemanticProperties.HeadingLevel="Level1"
                 Style="{StaticResource Headline}"
                 Text="{Binding LBL_HELLO_WORLD}" />
-
             <Label
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 SemanticProperties.HeadingLevel="Level2"
                 Style="{StaticResource SubHeadline}"
                 Text="{Binding LBL_WELCOME}" />
-
             <Button
                 x:Name="CounterBtn"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Text="{Binding BTN_CLICK_ME}" />
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
+                <Button Clicked="OnLanguageClicked" Text="en" />
+                <Button Clicked="OnLanguageClicked" Text="fr" />
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 
