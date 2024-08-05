@@ -25,7 +25,7 @@
 		<ApplicationTitle>MauiLocalizationTest</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.mauilocalizationtest</ApplicationId>
+		<ApplicationId>com.esri.mauilocalizationtest</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
